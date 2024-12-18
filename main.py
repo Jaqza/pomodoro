@@ -38,7 +38,6 @@ def clock_start():
         work_break.configure(text="Break", fg=YELLOW)
         check_marks["text"] +="✔"
         count_down(SHORT_BREAK_MIN * 60)
-
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 def count_down(count):
     global timer
@@ -52,7 +51,6 @@ def count_down(count):
     if count == 0:
         clock_start()
 # ---------------------------- UI SETUP ------------------------------- #
-
 window = Tk()
 window.title("Pomodoro Timer")
 window.configure(padx=20,pady=20,relief="raised",borderwidth=20,background=GREEN)
